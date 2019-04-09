@@ -6,7 +6,7 @@ def nalu_examples_deps():
     if "gwt_2_8_2" not in native.existing_rules():
         git_repository(
             name = "gwt_2_8_2",
-            commit = "30672bc682e665ff5436be1ef3b3a724b4c596dc",
+            commit = "bf8bee5902e8d0f3c8db1bfe8357762c66ba49f4",
             remote = "git@github.com:tadeoj/bazel_gwt_2.8.2.git",
         )
 
@@ -118,12 +118,12 @@ def generated_maven_jars():
 
     http_jar(
         name = "org_dominokit_domino_ui",
-        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410.jar"],
+        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190408.063837-428.jar"],
     )
 
     http_jar(
         name = "org_dominokit_domino_ui_sources",
-        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190312.103106-410-sources.jar"],
+        urls = ["https://oss.sonatype.org/content/repositories/snapshots/org/dominokit/domino-ui/1.0-SNAPSHOT/domino-ui-1.0-20190408.063837-428-sources.jar"],
     )
 
     http_jar(
